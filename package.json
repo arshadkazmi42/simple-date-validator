@@ -1,0 +1,24 @@
+{
+  "name": "simpledatevalidator",
+  "version": "1.0.0",
+  "description": "Simple nodejs module to validate date",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "simple",
+    "date",
+    "validator"
+  ],
+  "author": "Arshad",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.0.1",
+    "moment": "^2.20.1"
+  },
+  "scripts": {
+    "test": "mocha"
+  }
+}
