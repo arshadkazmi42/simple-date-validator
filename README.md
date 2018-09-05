@@ -9,6 +9,10 @@
 ## How to use?
 Pass date and date format to isValid function. Function will validate and return true/false;
 
+## Contributing Guidelines
+
+Read the contributing guidelines [here](https://github.com/arshadkazmi42/simple-date-validator/blob/master/CONTRIBUTING.md)
+
 ## Contributors
 
 [![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/0)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/0)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/1)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/1)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/2)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/2)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/3)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/3)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/4)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/4)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/5)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/5)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/6)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/6)[![](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/images/7)](https://sourcerer.io/fame/arshadkazmi42/arshadkazmi42/simple-date-validator/links/7)
