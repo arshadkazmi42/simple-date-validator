@@ -22,8 +22,8 @@ module.exports = {
 
     if ( isNaN( date[0] ) || isNaN( date[1] || isNaN( date[2] ) ) ) {
 
-    	return false;
-		}
+      return false;
+    }
 
     if ( !this.isValidDD ( date[0] ) ) {
 
@@ -106,7 +106,7 @@ module.exports = {
       case 9:
       case 11:
         if ( dd > 30 ) {
-          
+
           return false;
         }
         break;
