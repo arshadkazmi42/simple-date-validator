@@ -64,7 +64,7 @@ module.exports = {
     return yyyy.length === 4;
   },
 
-	isValidDDMMYYYY: function ( dd, mm, yyyy ) {
+  isValidDDMMYYYY: function ( dd, mm, yyyy ) {
     dd = Number( dd );
     mm = Number( mm );
     yyyy = Number( yyyy );
@@ -72,41 +72,40 @@ module.exports = {
 
     switch ( mm ) {
       case 1:
-			case 3:
-			case 5:
-			case 7:
-			case 8:
-			case 10:
-			case 12:
-				if ( dd > 31 ) {
-					return false;
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        if ( dd > 31 ) {
+          return false;
         }
-				break;
+        break;
 
-			case 2:
-				if ( isLeapYear && dd > 29 ) {
-					return false;
-				}
+        case 2:
+        if ( isLeapYear && dd > 29 ) {
+          return false;
+        }
 
-				if ( !isLeapYear && dd > 28 ) {
-					return false;
-				}
+        if ( !isLeapYear && dd > 28 ) {
+          return false;
+        }
+        break;
 
-				break;
-
-			case 4:
-			case 6:
-			case 9:
+      case 4:
+      case 6:
+      case 9:
       case 11:
-				if ( dd > 30 ) {
-					return false;
-				}
-				break;
+        if ( dd > 30 ) {
+          return false;
+        }
+        break;
 
-			default:
-				return false;
-				break;
-		}
-		return true;
+        default:
+          return false;
+          break;
+    }
+    return true;
   }
 };
