@@ -13,14 +13,14 @@ module.exports = {
    */
   isValidDate: function ( date, dateFormat ) {
 
-    var formattedDate = this.dateFormatting(date, dateFormat);
+    var formattedDate = this.dateFormatting( date, dateFormat );
     date = formattedDate.split("/");
 
     if ( date.length !== 3 ) {
       return false;
     }
 
-    if( isNaN(date[0]) || isNaN(date[1] || isNaN(date[2])) ) {
+    if ( isNaN(date[0]) || isNaN( date[1] || isNaN(date[2]) ) ) {
     	return false;
 		}
 
@@ -46,12 +46,12 @@ module.exports = {
    * @param currentFormat
    * @returns {string}
    */
-  dateFormatting: function(date, currentFormat) {
+  dateFormatting: function ( date, currentFormat ) {
 
     return moment(date, currentFormat).format("DD/MM/YYYY");
   },
 
-  isValidDD: function( dd ) {
+  isValidDD: function ( dd ) {
 
     return !(dd.length > 2 || Number(dd) > 31);
   },
@@ -71,6 +71,7 @@ module.exports = {
   	mm = Number(mm);
   	yyyy = Number(yyyy);
 		var isLeapYear = (yyyy % 4 === 0);
+
 		switch ( mm ) {
 
 			case 1:
@@ -80,17 +81,17 @@ module.exports = {
 			case 8:
 			case 10:
 			case 12:
-				if( dd > 31) {
+				if ( dd > 31 ) {
 					return false;
         }
 				break;
 
 			case 2:
-				if( isLeapYear && dd > 29 ) {
+				if ( isLeapYear && dd > 29 ) {
 					return false;
 				}
 
-				if( !isLeapYear && dd > 28 ) {
+				if ( !isLeapYear && dd > 28 ) {
 					return false;
 				}
 
