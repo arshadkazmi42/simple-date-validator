@@ -16,22 +16,27 @@ module.exports = {
     date = formattedDate.split( "/" );
 
     if ( date.length !== 3 ) {
+
       return false;
     }
 
     if ( isNaN( date[0] ) || isNaN( date[1] || isNaN( date[2] ) ) ) {
+
     	return false;
 		}
 
     if ( !this.isValidDD ( date[0] ) ) {
+
       return false;
     }
 
     if ( !this.isValidMM ( date[1] ) ) {
+
       return false;
     }
 
     if ( !this.isValidYYYY ( date[2] ) ) {
+
       return false;
     }
 
@@ -79,25 +84,29 @@ module.exports = {
       case 10:
       case 12:
         if ( dd > 31 ) {
+
           return false;
         }
         break;
 
         case 2:
-        if ( isLeapYear && dd > 29 ) {
-          return false;
-        }
+          if ( isLeapYear && dd > 29 ) {
 
-        if ( !isLeapYear && dd > 28 ) {
-          return false;
-        }
-        break;
+            return false;
+          }
+
+          if ( !isLeapYear && dd > 28 ) {
+
+            return false;
+          }
+          break;
 
       case 4:
       case 6:
       case 9:
       case 11:
         if ( dd > 30 ) {
+          
           return false;
         }
         break;
