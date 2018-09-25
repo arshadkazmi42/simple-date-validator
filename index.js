@@ -11,16 +11,15 @@ module.exports = {
    * @param dateFormat
    * @returns {*}
    */
-  isValidDate: function ( date, dateFormat ) {
-
+   isValidDate: function ( date, dateFormat ) {
     var formattedDate = this.dateFormatting( date, dateFormat );
-    date = formattedDate.split("/");
+    date = formattedDate.split( "/" );
 
     if ( date.length !== 3 ) {
       return false;
     }
 
-    if ( isNaN(date[0]) || isNaN( date[1] || isNaN(date[2]) ) ) {
+    if ( isNaN( date[0] ) || isNaN( date[1] || isNaN( date[2] ) ) ) {
     	return false;
 		}
 
@@ -36,8 +35,7 @@ module.exports = {
       return false;
     }
 
-    return this.isValidDDMMYYYY(date[0], date[1], date[3]);
-
+    return this.isValidDDMMYYYY( date[0], date[1], date[3] );
   },
 
   /**
@@ -48,17 +46,17 @@ module.exports = {
    */
   dateFormatting: function ( date, currentFormat ) {
 
-    return moment(date, currentFormat).format("DD/MM/YYYY");
+    return moment( date, currentFormat ).format( "DD/MM/YYYY" );
   },
 
   isValidDD: function ( dd ) {
 
-    return !(dd.length > 2 || Number(dd) > 31);
+    return !( dd.length > 2 || Number( dd ) > 31 );
   },
 
   isValidMM: function ( mm ) {
 
-    return !(mm.length > 2 || Number(mm) > 12);
+    return !( mm.length > 2 || Number( mm ) > 12 );
   },
 
   isValidYYYY: function ( yyyy ) {
@@ -67,14 +65,13 @@ module.exports = {
   },
 
 	isValidDDMMYYYY: function ( dd, mm, yyyy ) {
-  	dd = Number(dd);
-  	mm = Number(mm);
-  	yyyy = Number(yyyy);
-		var isLeapYear = (yyyy % 4 === 0);
+    dd = Number( dd );
+    mm = Number( mm );
+    yyyy = Number( yyyy );
+    var isLeapYear = ( yyyy % 4 === 0 );
 
-		switch ( mm ) {
-
-			case 1:
+    switch ( mm ) {
+      case 1:
 			case 3:
 			case 5:
 			case 7:
@@ -100,7 +97,7 @@ module.exports = {
 			case 4:
 			case 6:
 			case 9:
-			case 11:
+      case 11:
 				if ( dd > 30 ) {
 					return false;
 				}
@@ -112,5 +109,4 @@ module.exports = {
 		}
 		return true;
   }
-
 };
