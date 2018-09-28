@@ -14,7 +14,7 @@ Function will validate and return true or false.
 // Create Instance of the DateValidator
 var DateValidator = require('./index');
 
-// Pass in date and format to be validated and receive a boolean as feedback
+// Pass in date and format to be validated and receive a boolean
 DateValidator.isValidDate("2017-09-27","YYYY-MM-DD");
 ```
 
