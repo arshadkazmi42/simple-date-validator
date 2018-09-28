@@ -12,10 +12,13 @@ Function will validate and return true or false.
 
 ```
 // Create Instance of the DateValidator
-var DateValidator = require('./index');
+const DateValidator = require('simple-date-validator');
 
-// Pass in date and format to be validated and receive a boolean
+// This will return True
 DateValidator.isValidDate("2017-09-27","YYYY-MM-DD");
+
+// This will return False
+DateValidator.isValidDate("27-09-27","YYYY-MM-DD");
 ```
 
 ## Contributing Guidelines
