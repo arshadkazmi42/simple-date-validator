@@ -48,7 +48,6 @@ describe("check if date is in the past or not", function() {
   });
 
   it("returns true for past check on given date random date in the past", function () {
-    console.log(Math.floor(Math.random()) * 100);
     DateValidator.isDatePast(moment().subtract(10, 'years'), "YYYY-MM-DD").should.equal(true);
   });
 })
