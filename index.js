@@ -126,8 +126,7 @@ module.exports = {
    */
    isDatePast: function ( date, currentFormat ) {
      const currentDate = moment().format(currentFormat);
-     let isPast = moment(date).isBefore(currentDate);
 
-     return isPast;
+     return moment(date).isBefore(currentDate);
   }
 };
