@@ -40,3 +40,17 @@ describe("check if date is invalid", function () {
     DateValidator.isValidDate("AA/BB/2017", "DD/MM/YYYY").should.equal(false);
   });
 });
+
+describe("check if date is in the past or not", function() {
+  it("returns false for past check on given date of (2019-09-29, YYYY-MM-DD)", function () {
+    DateValidator.isDatePast("2019-09-29", "YYYY-MM-DD").should.equal(false);
+  });
+
+  it("returns false for past check on given date of (2018-10-01, YYYY-MM-DD)", function () {
+    DateValidator.isDatePast("2018-10-01", "YYYY-MM-DD").should.equal(false);
+  });
+
+  it("returns true for past check on given date of (2004-10-01, YYYY-MM-DD)", function () {
+    DateValidator.isDatePast("2004-10-01", "YYYY-MM-DD").should.equal(true);
+  });
+})

@@ -116,5 +116,18 @@ module.exports = {
           break;
     }
     return true;
+  },
+
+  /**
+   * Check if given date is past the current date
+   * @param date
+   * @param currentFormat
+   * @returns {boolean}
+   */
+   isDatePast: function ( date, currentFormat ) {
+     const currentDate = moment().format(currentFormat);
+     let isPast = moment(date).isBefore(currentDate);
+
+     return isPast;
   }
 };
