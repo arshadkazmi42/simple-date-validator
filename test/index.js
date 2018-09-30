@@ -8,6 +8,7 @@ var it = mocha.it;
 var assert = require('chai').assert;
 var should = require('chai').should();
 var DateValidator = require('../index');
+var moment = require('moment');
 
 describe("check if is date valid", function () {
   it("returns true for this as date is valid (2017-12-12, YYYY-MM-DD)", function () {
@@ -40,3 +41,13 @@ describe("check if date is invalid", function () {
     DateValidator.isValidDate("AA/BB/2017", "DD/MM/YYYY").should.equal(false);
   });
 });
+
+describe("check if date is in the past or not", function() {
+  it("returns false for past check on a given random date in the future", function () {
+    DateValidator.isDatePast(moment().add(5, 'days'), "YYYY-MM-DD").should.equal(false);
+  });
+
+  it("returns true for past check on given date random date in the past", function () {
+    DateValidator.isDatePast(moment().subtract(10, 'years'), "YYYY-MM-DD").should.equal(true);
+  });
+})
