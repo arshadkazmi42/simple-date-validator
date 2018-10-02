@@ -6,6 +6,8 @@
 ## How to install?
 [![NPM](https://nodei.co/npm/simpledatevalidator.png)](https://www.npmjs.com/package/simpledatevalidator/)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/12b4f952ec1e497e8d2c2f88638672f5)](https://www.codacy.com/app/arshadkazmi42/simple-date-validator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=arshadkazmi42/simple-date-validator&amp;utm_campaign=Badge_Grade)
+
 ## How to use?
 Pass date and date format to `isValidDate` function.
 Function will validate and return true or false.
