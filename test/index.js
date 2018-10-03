@@ -2,13 +2,13 @@
  * Created by arshad on 2/21/18.
  */
 
-var mocha = require('mocha');
-var describe = mocha.describe;
-var it = mocha.it;
-var assert = require('chai').assert;
-var should = require('chai').should();
-var DateValidator = require('../index');
-var moment = require('moment');
+const mocha = require('mocha');
+const describe = mocha.describe;
+const it = mocha.it;
+const assert = require('chai').assert;
+const should = require('chai').should();
+const DateValidator = require('../index');
+const moment = require('moment');
 
 describe("check if is date valid", function () {
   it("returns true for this as date is valid (2017-12-12, YYYY-MM-DD)", function () {

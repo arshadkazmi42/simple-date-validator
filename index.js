@@ -1,4 +1,4 @@
-var moment = require("moment");
+const moment = require("moment");
 
 module.exports = {
 
@@ -12,7 +12,7 @@ module.exports = {
    * @returns {*}
    */
    isValidDate: function ( date, dateFormat ) {
-    var formattedDate = this.dateFormatting( date, dateFormat );
+    const formattedDate = this.dateFormatting( date, dateFormat );
     date = formattedDate.split( "/" );
 
     if ( date.length !== 3 ) {
@@ -73,7 +73,7 @@ module.exports = {
     dd = Number( dd );
     mm = Number( mm );
     yyyy = Number( yyyy );
-    var isLeapYear = ( yyyy % 4 === 0 );
+    const isLeapYear = ( yyyy % 4 === 0 );
 
     switch ( mm ) {
       case 1:
