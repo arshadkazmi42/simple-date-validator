@@ -7,3 +7,4 @@
 - [Md Akram Kazmi](https://github.com/akramkazmi71)
 - [Rajat Srivastava](https://github.com/rajat19)
 - [Rick Dunkin](https://github.com/rickdunkin)
+- [Razi Abdul Rasheed](https://github.com/razi-ed)
