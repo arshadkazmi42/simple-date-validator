@@ -11,7 +11,7 @@
 Pass date and date format to `isValidDate` function.
 Function will validate and return true or false.
 
-```
+```javascript
 // Create Instance of the DateValidator
 const DateValidator = require('simple-date-validator');
 
