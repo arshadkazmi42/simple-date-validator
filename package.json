@@ -1,11 +1,14 @@
 {
   "name": "simpledatevalidator",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Simple nodejs module to validate date",
   "main": "index.js",
   "scripts": {
     "test": "node_modules/mocha/bin/mocha test/index.js"
   },
+  "files": [
+    "index.js"
+  ],
   "keywords": [
     "simple",
     "date",
