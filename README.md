@@ -12,7 +12,7 @@
 [![NPM](https://nodei.co/npm/simpledatevalidator.png)](https://www.npmjs.com/package/simpledatevalidator/)
 
 ## How to use?
-Pass date and date format to `isValidDate` function.
+Pass date and date Format to `isValidDate` function.
 Function will validate and return true or false.
 
 ```javascript
